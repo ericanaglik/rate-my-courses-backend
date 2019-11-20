@@ -10,6 +10,7 @@ const app = express();
 app.use(express.json());
 
 // DB Config
+// config is stored in .env file ignored in .gitignore
 const db = config.get('mongoURI');
 
 // Connect to Mongo
